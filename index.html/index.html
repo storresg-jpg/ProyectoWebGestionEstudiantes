@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Gestión y Tutoría - Sociología UNSA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome (opcional para iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- ENCABEZADO PRINCIPAL -->
+        <header>
+            <div class="logo-titulo">
+                <i class="fas fa-university"></i>
+                <h1>Sistema de Gestión y Tutoría<br><span>Escuela de Sociología - UNSA</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- SECCIÓN INICIO -->
+            <section id="inicio" class="section">
+                <h2><i class="fas fa-chalkboard-user"></i> Bienvenidos</h2>
+                <div class="intro">
+                    <p>La <strong>Escuela Profesional de Sociología de la Universidad Nacional de San Agustín de
+                            Arequipa</strong> pone a disposición este espacio virtual para el <strong>seguimiento
+                            académico</strong> y la <strong>tutoría grupal</strong>. Aquí encontrarás información sobre
+                        tu avance en cursos, actividades de acompañamiento y recursos para potenciar tu formación
+                        sociológica.</p>
+                    <p><strong>Objetivos del sitio:</strong> facilitar la gestión de estudiantes, monitorear el progreso
+                        en asignaturas, fortalecer la comunicación tutor-estudiante y proveer enlaces a plataformas
+                        educativas externas.</p>
+                </div>
+
+                <!-- Bloque de seguimiento de estudiantes (gestión) -->
+                <div class="seguimiento-card">
+                    <h3><i class="fas fa-clipboard-list"></i> Seguimiento de estudiantes (ejemplo)</h3>
+                    <div class="tabla-seguimiento">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Estudiante</th>
+                                    <th>Curso</th>
+                                    <th>Avance (%)</th>
+                                    <th>Estado tutoría</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Teresa Yañez</td>
+                                    <td>Teoría Sociológica I</td>
+                                    <td>85%</td>
+                                    <td>En seguimiento</td>
+                                </tr>
+                                <tr>
+                                    <td>Randy Carpio</td>
+                                    <td>Estructura Social Peruana</td>
+                                    <td>60%</td>
+                                    <td>Requiere reunión</td>
+                                </tr>
+                                <tr>
+                                    <td>Alison Serruto</td>
+                                    <td>Metodología de la Investigación</td>
+                                    <td>92%</td>
+                                    <td>Avance óptimo</td>
+                                </tr>
+                                <tr>
+                                    <td>Roberto Apaza</td>
+                                    <td>Sociología Rural y Urbana</td>
+                                    <td>45%</td>
+                                    <td>Tutoría asignada</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="nota"><i class="fas fa-info-circle"></i> Datos simulados con fines académicos.
+                            Próximamente integrará base de datos real.</p>
+                    </div>
+                </div>
+
+                <!-- Bloque de tutoría por salón (con botón dinámico) -->
+                <div class="tutoria-card">
+                    <h3><i class="fas fa-users"></i> Tutoría por salón - Acompañamiento grupal</h3>
+                    <p>El programa de tutoría asigna un docente tutor a cada salón (I a V año). Se realizan reuniones
+                        semanales para reforzar el rendimiento académico, resolver dudas y realizar seguimiento
+                        psicosocial.</p>
+                    <button id="btnDetallesTutoria" class="btn-dinamico"><i class="fas fa-eye"></i> Mostrar detalles del
+                        acompañamiento</button>
+                    <div id="detallesTutoria" class="detalles-oculto">
+                        <p><strong>📅 Horarios de tutoría grupal (2026):</strong></p>
+                        <ul>
+                            <li>📌 I año: Lunes 10:00 - 12:00 (Aula 301) - Tutor: Dr. Roberto Gómez</li>
+                            <li>📌 II año: Martes 14:00 - 16:00 (Aula 205) - Tutora: Mg. Ana Luna</li>
+                            <li>📌 III año: Miércoles 09:00 - 11:00 (Aula 108) - Tutor: Dr. Carlos Paredes</li>
+                            <li>📌 IV año: Jueves 16:00 - 18:00 (Aula 402) - Tutora: Mg. Elena Flores</li>
+                            <li>📌 V año: Viernes 12:00 - 14:00 (Aula 110) - Tutor: Dr. Miguel Ríos</li>
+                        </ul>
+                        <p><strong>Responsabilidades del tutor:</strong> seguimiento de notas, orientación en proyectos
+                            de investigación, derivación a bienestar universitario si es necesario.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN RECURSOS -->
+            <section id="recursos" class="section">
+                <h2><i class="fas fa-book-open"></i> Recursos multimedia y enlaces educativos</h2>
+
+                <!-- Imagen representativa -->
+                <div class="multimedia-imagen">
+                    <img src="/IMAGENES/imagen EPS.jpg" alt="Frontis Facultad" loading="lazy">
+                    <p class="caption">Escuela Profesional de Sociologia</p>
+                </div>
+
+                <!-- Video embebido -->
+                <div class="video-container">
+                    <h3><i class="fab fa-youtube"></i> Video: ¿Qué es la Sociología?</h3>
+                    <iframe width="560" height="315" src="/Videos/Bauman, Pensar Sociológicamente.mp4"
+                        title="Bauman, Pensar Sociológicamente" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <!-- Enlaces a plataformas educativas -->
+                <div class="enlaces-educativos">
+                    <h3><i class="fas fa-link"></i> Plataformas recomendadas</h3>
+                    <ul>
+                        <li><a href="https://moodle.org/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fas fa-graduation-cap"></i> Moodle UNSA</a></li>
+                        <li><a href="https://es.khanacademy.org/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fas fa-chalkboard"></i> Khan Academy</a></li>
+                        <li><a href="https://classroom.google.com/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-google"></i> Google Classroom</a></li>
+                        <li><a href="https://www.coursera.org/" target="_blank"
+                                rel="noopener noreferrer"><i class="fas fa-laptop-code"></i> Coursera - Sociología</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECCIÓN CONTACTO -->
+            <section id="contacto" class="section">
+                <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                <p>¿Dudas, sugerencias o necesitas comunicarte con la coordinación de tutorías? Completa el siguiente
+                    formulario y te responderemos a la brevedad.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana María Torres">
+                        <span class="error-message" id="errorNombre"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ana.torres@unsa.edu.pe">
+                        <span class="error-message" id="errorEmail"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4"
+                            placeholder="Escribe tu consulta o comentario..."></textarea>
+                        <span class="error-message" id="errorMensaje"></span>
+                    </div>
+                    <button type="submit" class="btn-enviar"><i class="fas fa-paper-plane"></i> Enviar mensaje</button>
+                    <div id="formResultado" class="form-resultado"></div>
+                </form>
+            </section>
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <div class="footer-content">
+                <p><i class="far fa-copyright"></i> 2026 - Escuela de Sociología, Universidad Nacional de San Agustín de
+                    Arequipa | Todos los derechos reservados</p>
+                <p>Dirección: Calle San Agustín N° 100, Arequipa - Perú | Central telefónica: (054) 123456</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

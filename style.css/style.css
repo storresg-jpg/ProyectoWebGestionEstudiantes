@@ -1,0 +1,353 @@
+/* RESET y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc;
+    color: #1e2a3e;
+    line-height: 1.6;
+}
+
+/* Contenedor principal con grid layout */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0B2F6C 0%, #0e3a7a 100%);
+    color: white;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-titulo i {
+    font-size: 2.8rem;
+    color: #F3A712;
+}
+
+.logo-titulo h1 {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+}
+
+.logo-titulo h1 span {
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: block;
+    color: #e0e0e0;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #F3A712;
+    color: #0B2F6C;
+}
+
+/* SECCIONES GENERALES */
+.section {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    scroll-margin-top: 20px;
+}
+
+.section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0B2F6C;
+    font-size: 2rem;
+    border-left: 6px solid #F3A712;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    color: #0B2F6C;
+    margin: 15px 0 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Tarjetas internas */
+.seguimiento-card, .tutoria-card {
+    background: #E9ECEF;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 25px 0;
+}
+
+.tabla-seguimiento {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0B2F6C;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+}
+
+.nota {
+    font-size: 0.85rem;
+    margin-top: 12px;
+    color: #555;
+}
+
+/* Botón dinámico */
+.btn-dinamico {
+    background-color: #F3A712;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 15px 0;
+    transition: 0.2s;
+    color: #0B2F6C;
+}
+
+.btn-dinamico:hover {
+    background-color: #e0950a;
+    transform: scale(1.02);
+}
+
+.detalles-oculto {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border-left: 5px solid #0B2F6C;
+}
+
+.detalles-oculto.visible {
+    display: block;
+}
+
+/* Multimedia */
+.multimedia-imagen img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    color: #5a6874;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 25px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.enlaces-educativos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.enlaces-educativos li a {
+    background: #0B2F6C;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 40px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.enlaces-educativos li a:hover {
+    background: #F3A712;
+    color: #0B2F6C;
+    transform: translateY(-3px);
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #F3A712;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(243,167,18,0.2);
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.btn-enviar {
+    background-color: #0B2F6C;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #F3A712;
+    color: #0B2F6C;
+}
+
+.form-resultado {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #0B2F6C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.social-icons a:hover {
+    color: #F3A712;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE (FLEXBOX + GRID + MEDIA QUERIES) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .section {
+        padding: 20px;
+    }
+    .section h2 {
+        font-size: 1.6rem;
+    }
+    .enlaces-educativos ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .enlaces-educativos li a {
+        text-align: center;
+    }
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}
